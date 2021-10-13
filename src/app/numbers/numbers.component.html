@@ -1,0 +1,9 @@
+<div class="container">
+  <h4><label for="firstNumber">First Number Input</label></h4>
+  <input (input)="getFirstInput(firstInput.value)" type="number" #firstInput />
+  <h4><label for="secondNumber">Second Number Input</label></h4>
+  <input (input)="getSecondInput(secondInput.value)" type="number" #secondInput />
+  <hr />
+  <app-operation [firstInput]="first" [secondInput]="second"> </app-operation>
+  <hr />
+</div>
